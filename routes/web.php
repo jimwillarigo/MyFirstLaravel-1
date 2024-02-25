@@ -60,16 +60,14 @@ use App\Http\Controllers\PagesController;
 // Route::get('contactus', [PagesController::class, 'contactus']);
 Route::get('/', 'PagesController@home');
 Route::get('aboutus', 'PagesController@aboutus');
-Route::get('service', 'PagesController@sevices');
-Route::get('blog', 'PagesController@blog');
+Route::get('service', 'PagesController@services');
 Route::get('contactus', 'PagesController@contactus');
 
 
 
 //Resource
 // Route::resource('blog', 'PageController');
-Route::resource('blog', "PagesController");
-
+Route::resource('blogs', "BlogController");
 
     
 

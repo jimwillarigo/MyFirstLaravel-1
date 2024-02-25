@@ -106,7 +106,7 @@ Home
                     adult is from 31-59; senior is from 60 or more. <br>
                     Display “Invalid age” for negative numbers.</p>
                     
-                    <a type="button" class="btn btn-success">New Member</a>
+                    <a type="button" title="Add New Member" class="btn btn-success">New Member</a>
             </div>
         </div>
         <div class="row">
@@ -172,7 +172,7 @@ Home
                                         @if($member['age'] > 1 && $member['age']  < 18)
                                             Under Age
                                         @elseif ($member['age']  > 17 && $member['age']  < 31)
-                                            Yound Adult
+                                            Young Adult
                                         @elseif ($member['age']  > 30 && $member['age'] < 60)
                                             Adult
                                         @elseif ($member['age']  > 59)
@@ -182,9 +182,9 @@ Home
                                         @endif  
                                 </td>
                                 <td>{{$member['position']}}</td>
-                                <td>
-                                    <a type="button" class="btn btn-info">Edit</a>
-                                    <a type="button" class="btn btn-danger">Delete</a>
+                                <td class="text-center">
+                                    <a type="button" title="Edit" class="btn btn-info"><i class="bi bi-pencil-square"></i></a>
+                                    <a type="button" title="Delete" class="btn btn-danger m-1"><i class="bi bi-trash-fill"></i></a>
                                 </td>
                             </tr>
                         @empty

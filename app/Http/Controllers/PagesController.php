@@ -16,9 +16,6 @@ class PagesController extends Controller
     public function services(){
         return view("service");
     }
-    public function blog(){
-        return view("blog");
-    }
     public function contactus(){
         return view("contactus");
     }

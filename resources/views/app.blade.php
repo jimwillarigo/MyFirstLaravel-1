@@ -3,6 +3,7 @@
 
     <link rel="icon" href="{{asset('img/sia-logo.png')}}">
     <link href="{{asset('bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{asset('bootstrap/icons/font/bootstrap-icons.min.css')}}">
     <script src="{{asset('bootstrap/js/bootstrap.bundle.min.js')}}" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <head>
@@ -50,6 +51,9 @@
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="#">Services 3</a></li>
                             </ul>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="/blogs">Blogs</a>
                             </li>
                             <li class="nav-item">
                             <a class="nav-link" href="/contactus">Contact Us</a>
@@ -104,7 +108,7 @@
 
         @section('footer')
         <div class="container-fluid p-0 bg-dark">
-            <div class="container pt-3">
+            <div class="container pt-5 pb-5">
                 <div class="row text-white">
                     <div class="col-md">
                         <a class="navbar-brand" href="/"><img class="img-fluid" src="{{asset('img/sia-logo.png')}}" alt="IAS " width="100" height="50"></a>
@@ -116,7 +120,7 @@
                         <ul>
                             <li><a href="/service">Services</a></li>
                             <li><a href="/aboutus">About Us</a></li>
-                            <li><a href="/blog">Blogs Us</a></li>
+                            <li><a href="/blogs">Blogs Us</a></li>
                             <li><a href="/contactus">Contact Us</a></li>
                         </ul>
                     </div>
@@ -129,11 +133,11 @@
                 </div>
             </div>
            
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col">
-                        <p class="text-white">Powered by <a href="https://laravel.com/">Laravel</a></p>
-                    </div>
+        </div>
+        <div class="container-fluid pt-3 bg-primary">
+            <div class="row text-center">
+                <div class="col">
+                    <p class="text-white">Powered by <a href="https://laravel.com/" class="text-white">Laravel</a></p>
                 </div>
             </div>
         </div>
