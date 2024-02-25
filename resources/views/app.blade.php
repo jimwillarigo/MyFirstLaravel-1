@@ -2,8 +2,8 @@
 <html>
 
     <link rel="icon" href="{{asset('img/sia-logo.png')}}">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="{{asset('bootstrap/css/bootstrap.min.css')}}" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="{{asset('bootstrap/js/bootstrap.bundle.min.js')}}" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <head>
         <title>Archeticture Ingtegrated System - @yield('title')</title>
@@ -105,17 +105,26 @@
         @section('footer')
         <div class="container-fluid p-0 bg-dark">
             <div class="container pt-3">
-                <div class="row">
-                    <div class="col-md text-white">
+                <div class="row text-white">
+                    <div class="col-md">
                         <a class="navbar-brand" href="/"><img class="img-fluid" src="{{asset('img/sia-logo.png')}}" alt="IAS " width="100" height="50"></a>
                         <h3>System Integrated Archeticture</h3>
                         <p style="text-align: justify;">It describes data, application, and technology needed to create business solutions for organizations</p>
                     </div>
                     <div class="col-md">
-                        
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="/service">Services</a></li>
+                            <li><a href="/aboutus">About Us</a></li>
+                            <li><a href="/blog">Blogs Us</a></li>
+                            <li><a href="/contactus">Contact Us</a></li>
+                        </ul>
                     </div>
                     <div class="col-md">
-                        
+                        <h3>Follow Us</h3>
+                        <button type="button" class="btn btn-outline-primary">Facebook</button>
+                        <button type="button" class="btn btn-outline-info">Twitter</button>
+                        <button type="button" class="btn btn-outline-warning">Instagran</button>
                     </div>
                 </div>
             </div>

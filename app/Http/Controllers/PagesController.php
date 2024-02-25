@@ -10,13 +10,16 @@ class PagesController extends Controller
     public function home(){
         return view('home');
     }
+    public function aboutus(){
+        return view("aboutus");
+    }
     public function services(){
-        return view("services");
+        return view("service");
+    }
+    public function blog(){
+        return view("blog");
     }
     public function contactus(){
         return view("contactus");
-    }
-    public function aboutus(){
-        return view("aboutus");
     }
 }

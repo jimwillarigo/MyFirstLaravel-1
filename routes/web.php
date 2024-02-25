@@ -59,9 +59,11 @@ use App\Http\Controllers\PagesController;
 // Controller
 // Route::get('contactus', [PagesController::class, 'contactus']);
 Route::get('/', 'PagesController@home');
-Route::get('/aboutus', 'PagesController@aboutus');
-Route::get('/services', 'PagesController@sevices');
-Route::get('/contactus', 'PagesController@contactus');
+Route::get('aboutus', 'PagesController@aboutus');
+Route::get('service', 'PagesController@sevices');
+Route::get('blog', 'PagesController@blog');
+Route::get('contactus', 'PagesController@contactus');
+
 
 
 //Resource
@@ -72,23 +74,49 @@ Route::resource('blog', "PagesController");
     
 
 Route::get('/', function () {
-    
-$name = "Ebrahim";
-$birthday = "July, 10, 2006";
-$age = 18;
-$position = "IT Instructor";
 
-$member = [
-    "name"=> "Mohammad Rafi",
-    "birthday" => "February 27, 2020",
-    "age" => 4,
-    "position" => "Eldest"];
 
-    // return view('home', $member);
+    $name = "Ebrahim";
+    $birthday = "July, 10, 2006";
+    $age = 18;
+    $position = "IT Instructor";
+
+// $members = [
+//     "name"=> "Mohammad Rafi",
+//     "birthday" => "February 27, 2020",
+//     "age" => 4,
+//     "position" => "Eldest"];
+
+// $members = array();
+$members = array(
+            array(
+                "name"=> "Ebrahim",
+                "birthday" => "July 10, 2006",
+                "age" => 18,
+                "position" => "Father"),
+            array(
+                "name"=> "Rose Marie",
+                "birthday" => "July 17, 1993",
+                "age" => 30,
+                "position" => "Mother"),
+            array(
+                "name"=> "Mohammad Rafi",
+                "birthday" => "February 27, 2020",
+                "age" => 4,
+                "position" => "Eldest son"),
+            array(
+                "name"=> "Farhana",
+                "birthday" => "August 14, 2021",
+                "age" => 3,
+                "position" => "Youngest Daughter"));
+                
+
+    // return view('home', $members);
     return view('home')
     ->with("n", $name)
     ->with("b", $birthday)
     ->with("a", $age)
     ->with("p", $position)
-    ->with($member);
+    // ->with($members);
+    ->with("members" ,$members);
 })->name("home");

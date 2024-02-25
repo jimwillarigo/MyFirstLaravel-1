@@ -97,30 +97,106 @@ Home
 </div>
 
  <!-- Get value from passed Data -->
-<div class="container-fluid">
+<div class="container-fluid pt-5 pb-5">
     <div class = "container">
-        <table>
-            <thead>
-                <td><strong>Name</strong></td>
-                <td><strong>Birthday</strong></td>
-                <td><strong>Age</strong></td>
-                <td><strong>Position</strong></td>
-            </thead>
-            <tbody>
-                <tr style="bor">
-                    <td>{{$n}}</td>
-                    <td>{{$b}}</td>
-                    <td>{{$a}}</td>
-                    <td>{{$p}}</td>
-                </tr>
-                <tr>
-                    <td>{{$name}}</td>
-                    <td>{{$birthday}}</td>
-                    <td>{{$age}}</td>
-                    <td>{{$position}}</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="row mb-3">
+            <div class="col">
+                <p> Design program Age Group that will determine if age belongs to underage, young adult, adult, senior. <br>
+                    Under age is 1-17; young adult is from 18-30; <br>
+                    adult is from 31-59; senior is from 60 or more. <br>
+                    Display “Invalid age” for negative numbers.</p>
+                    
+                    <a type="button" class="btn btn-success">New Member</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <table>
+                    <thead>
+                        <td><strong>Name</strong></td>
+                        <td><strong>Birthday</strong></td>
+                        <td><strong>Age</strong></td>
+                        <td><strong>Group</strong></td>
+                        <td><strong>Position</strong></td>
+                        <td><strong>Action</strong></td>
+                    </thead>
+                    <tbody>
+                        <?php
+                        // <tr style="bor">
+                        //     <td>{{$n}}</td>
+                        //     <td>{{$b}}</td>
+                        //     <td>{{$a}}</td>
+                        //     <td>
+                        //             @if ($a > 1 && $a <18)
+                        //                 Under Age
+                        //             @elseif ($a > 17 && $a <31)
+                        //                 Yound Adult
+                        //             @elseif ($a > 30 && $a <60)
+                        //                 Adult
+                        //             @elseif ($a > 59)
+                        //                 Senior
+                        //             @else
+                        //                 Invalid Age
+                        //             @endif
+                        //     </td>
+                        //     <td>{{$p}}</td>
+                        // </tr>
+                        ?>
+                        @php
+                            //<tr>
+                            // <td>{{$name}}</td>
+                            // <td>{{$birthday}}</td>
+                            // <td>{{$age}}</td>
+                            // <td>
+                            //     @if ($age > 1 && $age <18)
+                            //         Under Age
+                            //     @elseif ($age > 17 && $age <31)
+                            //         Yound Adult
+                            //     @elseif ($age > 30 && $age <60)
+                            //         Adult
+                            //     @elseif ($age > 59)
+                            //         Senior
+                            //     @else                                        
+                            //         Invalid Age
+                            //     @endif  
+                            // </td>
+                            // <td>{{$position}}</td>
+                            // <tr>
+                        @endphp
+                        @forelse($members as $member)
+                            <tr>
+                                <td>{{$member['name']}}</td>
+                                <td>{{$member['birthday']}}</td>
+                                <td>{{$member['age']}}</td>
+                                <td>
+                                        @if($member['age'] > 1 && $member['age']  < 18)
+                                            Under Age
+                                        @elseif ($member['age']  > 17 && $member['age']  < 31)
+                                            Yound Adult
+                                        @elseif ($member['age']  > 30 && $member['age'] < 60)
+                                            Adult
+                                        @elseif ($member['age']  > 59)
+                                            Senior
+                                        @else
+                                            Invalid Age
+                                        @endif  
+                                </td>
+                                <td>{{$member['position']}}</td>
+                                <td>
+                                    <a type="button" class="btn btn-info">Edit</a>
+                                    <a type="button" class="btn btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                        @empty
+                            <tr>
+                                <td>No record yet!</td>
+                            </tr>
+                        @endforelse
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
     </div>
 </div>
 @endsection
