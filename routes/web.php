@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 //Basic Routing
 //Naming Routes
@@ -54,3 +55,40 @@ Route::get('/', function () {
 //         return "Hi $name! Welcome to your profile!";
 //     });
 // });
+
+// Controller
+// Route::get('contactus', [PagesController::class, 'contactus']);
+Route::get('/', 'PagesController@home');
+Route::get('/aboutus', 'PagesController@aboutus');
+Route::get('/services', 'PagesController@sevices');
+Route::get('/contactus', 'PagesController@contactus');
+
+
+//Resource
+// Route::resource('blog', 'PageController');
+Route::resource('blog', "PagesController");
+
+
+    
+
+Route::get('/', function () {
+    
+$name = "Ebrahim";
+$birthday = "July, 10, 2006";
+$age = 18;
+$position = "IT Instructor";
+
+$member = [
+    "name"=> "Mohammad Rafi",
+    "birthday" => "February 27, 2020",
+    "age" => 4,
+    "position" => "Eldest"];
+
+    // return view('home', $member);
+    return view('home')
+    ->with("n", $name)
+    ->with("b", $birthday)
+    ->with("a", $age)
+    ->with("p", $position)
+    ->with($member);
+})->name("home");
