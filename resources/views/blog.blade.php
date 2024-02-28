@@ -26,7 +26,7 @@ Blogs
                         @if ($a > 1 && $a < 18)
                             Under Age
                         @elseif ($a > 17 && $a < 31)
-                            Yound Adult
+                            Young Adult
                         @elseif ($a > 30 && $a < 60)
                             Adult
                         @elseif ($a > 60)
@@ -44,7 +44,7 @@ Blogs
                         @if (\$a > 1 && \$a < 18)
                             Under Age
                         @elseif (\$a > 17 && \$a < 31)
-                            Yound Adult
+                            Young Adult
                         @elseif (\$a > 30 && \$a < 60)
                             Adult
                         @elseif (\$a > 60)
@@ -70,7 +70,7 @@ Blogs
                             Under Age
                             @break
                         @case ($a > 17 && $a < 31)
-                            Yound Adult
+                            Young Adult
                             @break
                         @case ($a > 30 && $a < 60)
                             Adult
@@ -96,7 +96,7 @@ Blogs
                             Under Age
                             @break
                         @case (\$a > 17 && \$a < 31)
-                            Yound Adult
+                            Young Adult
                             @break
                         @case (\$a > 30 && \$a < 60)
                             Adult
@@ -259,19 +259,11 @@ Blogs
         <!-- FOR ELSE -->
         <div class="row">
             <div class="col-md">
-<<<<<<< HEAD
-                <?php 
-                // @if(sizeof($members) < 1)
-                //     <h3>No record yet!</h3>
-                // @else 
-                ?>
-=======
                 
                  @if(sizeof($members) < 1)
                     <h2>NO RECORD YET!</h2>
                  @else
                 
->>>>>>> e9b32aa326a75c42a53929c75c3078278d94dc6f
                     <table class="w-100">
                         <thead>
                             <td class="fw-bold">Name</td>
@@ -336,12 +328,7 @@ Blogs
                             @endforelse
                         </tbody>
                     </table>
-<<<<<<< HEAD
-            
-                <?php // @endif ?>
-=======
                 @endif
->>>>>>> e9b32aa326a75c42a53929c75c3078278d94dc6f
             </div>
             
             <div class="col-md">
@@ -427,25 +414,36 @@ Blogs
                 $ctr = 0;
                 @endphp
 
-                @php
-                /*
                     @while($ctr <  sizeof($members))
 
-                        @php 
-                        $member = $members[$ctr];    
-                        @endphp
+                    @php
+                        $name = $members[$ctr]["name"];
+                        $bday = $members[$ctr]["birthday"];
+                        $age = $members[$ctr]["age"];
+                        $position = $members[$ctr]["position"];
+                    @endphp
 
-                        Name: {{$member['name']}} <br> 
-                        Birthday: {{$member['birthday']}} 
-                        Age: {{$member['age']}} <br>
-                        Position: {{$member['position']}}<br>
-                        @php
-                        $ctr++;
-                        @endph
+                        Name: {{$name}} <br> 
+                        Birthday: {{$bday}} <br>
+                        Age: {{$age}} <br>
+                        Group:              
+                                @if($age > 1 && $age  < 18)
+                                    Under Age
+                                @elseif ($age  > 17 && $age  < 31)
+                                    Young Adult
+                                @elseif ($age  > 30 && $age < 60)
+                                    Adult
+                                @elseif ($age  > 59)
+                                    Senior
+                                @else
+                                    Invalid Age
+                                @endif 
+                        <br>
+                        Position: {{$position}}<br>
+
+                        @php $ctr++ @endphp
                 <hr>
                     @endwhile
-                */
-                @endphp
                     
             </div>
         </div>
