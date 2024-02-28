@@ -3,6 +3,20 @@
 Contact Us
 @endsection
 
+@section('header')
+@parent
+
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                HI! THIS IS ADDITION FOR HEADER
+            </div>
+        </div>
+    </div>
+</div>
+
+@endsection
 
 @section('content')
 <div class = "container text-center">

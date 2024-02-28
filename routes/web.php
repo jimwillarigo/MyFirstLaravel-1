@@ -14,9 +14,9 @@ use App\Http\Controllers\PagesController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/welcome', function () {
+    return view('welcome');
+})->name('welcome');
 
 //Basic Routing
 //Naming Routes
@@ -67,13 +67,13 @@ Route::get('contactus', 'PagesController@contactus');
 
 //Resource
 // Route::resource('blog', 'PageController');
-// Route::resource('blogs', "BlogController");
+Route::resource('blogs', "BlogController");
 
 Route::get('/blogs', function(){
     
     $name = "Ebrahim";
     $birthday = "July, 10, 2006";
-    $age = -1;
+    $age = 20;
     $position = "IT Instructor";
 
 // $members = [
@@ -102,7 +102,7 @@ $members = array();
 //             array(
 //                 "name"=> "Farhana",
 //                 "birthday" => "August 14, 2021",
-//                 "age" => 3,
+//                 "age" => -1,
 //                 "position" => "Youngest Daughter"));
                 
 

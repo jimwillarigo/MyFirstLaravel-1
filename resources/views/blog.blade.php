@@ -40,8 +40,8 @@ Blogs
             <div class="col-md">
                 Code
                     <?php
-                    $text = "{{/$a}} is belong to 
-                        @if (\a > 1 && \$a < 18)
+                    $text = "{{\$a}} is belong to 
+                        @if (\$a > 1 && \$a < 18)
                             Under Age
                         @elseif (\$a > 17 && \$a < 31)
                             Yound Adult
@@ -259,11 +259,11 @@ Blogs
         <!-- FOR ELSE -->
         <div class="row">
             <div class="col-md">
-                <?php 
-                // @if(sizeof($members) < 1)
-                //     <h3>No record yet!</h3>
-                // @else 
-                ?>
+                
+                 @if(sizeof($members) < 1)
+                    <h2>NO RECORD YET!</h2>
+                 @else
+                
                     <table class="w-100">
                         <thead>
                             <td class="fw-bold">Name</td>
@@ -328,8 +328,7 @@ Blogs
                             @endforelse
                         </tbody>
                     </table>
-            
-                <?php // @endif ?>
+                @endif
             </div>
             
             <div class="col-md">
