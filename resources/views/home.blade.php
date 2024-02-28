@@ -19,7 +19,6 @@ Home
 
 @section('content')
 @parent
-asdasdasdasdasdasddasd
 <!-- Defination Section -->
 <div class="container-fluid">
     <div class = "container pt-5 pb-5">
