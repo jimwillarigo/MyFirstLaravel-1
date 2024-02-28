@@ -39,7 +39,7 @@
                             <a class="nav-link active" aria-current="page" href="/">Home</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="/aboutus">About Us</a>
+                            <a class="nav-link" href="/aboutus">About SIA</a>
                             </li>
                             <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="/services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -58,6 +58,7 @@
                             <li class="nav-item">
                             <a class="nav-link" href="/contactus">Contact Us</a>
                             </li>
+                            <!-- @yield('additional_menu') -->
                             <!-- <li class="nav-item">
                             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                             </li> -->
