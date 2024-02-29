@@ -11,6 +11,8 @@ Contact Us
         <div class="row">
             <div class="col">
                 HI! THIS IS ADDITION FOR HEADER
+
+                <a href="https://calendly.com/ediangca22/achieve-your-goals" type="button" class="btn-primary">RESERVE NOW!</a>
             </div>
         </div>
     </div>

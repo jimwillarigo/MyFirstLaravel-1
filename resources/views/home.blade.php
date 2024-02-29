@@ -22,7 +22,7 @@ Home
 asdasdasdasdasdasddasd
 <!-- Defination Section -->
 <div class="container-fluid">
-    <div class = "container pt-5 pb-5">
+    <div id="aboutus" class = "container pt-5 pb-5">
         <div class="row text-center">
             <h2 class="text-uppercase">System Integration Archeticture</h2>
             <p>The course covers fundamental concepts of system integration and system architecture. <br>

@@ -18,6 +18,11 @@ Route::get('/welcome', function () {
     return view('welcome');
 })->name('welcome');
 
+
+Route::get('/post/{post_title}', function ($post_title) {
+    return view('post')->with("title", $post_title);
+})->name('post');
+
 //Basic Routing
 //Naming Routes
 //Required Parameters
