@@ -62,7 +62,6 @@
                             <li class="nav-item">
                             <a class="nav-link" href="/contactus">Contact Us</a>
                             </li>
-                            @yield('additional_menu')
                             <!-- <li class="nav-item">
                             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                             </li> -->

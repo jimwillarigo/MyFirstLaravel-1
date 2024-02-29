@@ -72,13 +72,13 @@ Route::get('contactus', 'PagesController@contactus');
 
 //Resource
 // Route::resource('blog', 'PageController');
-Route::resource('blogs', "BlogController");
+// Route::resource('blogs', "BlogController");
 
 Route::get('/blogs', function(){
     
     $name = "Ebrahim";
     $birthday = "July, 10, 2006";
-    $age = 20;
+    $age = 18;
     $position = "IT Instructor";
 
 // $members = [
@@ -87,28 +87,28 @@ Route::get('/blogs', function(){
 //     "age" => 4,
 //     "position" => "Eldest"];
 
-$members = array();
-// $members = array(
-//             array(
-//                 "name"=> "Ebrahim",
-//                 "birthday" => "July 10, 2006",
-//                 "age" => 18,
-//                 "position" => "Father"),
-//             array(
-//                 "name"=> "Rose Marie",
-//                 "birthday" => "July 17, 1993",
-//                 "age" => 30,
-//                 "position" => "Mother"),
-//             array(
-//                 "name"=> "Mohammad Rafi",
-//                 "birthday" => "February 27, 2020",
-//                 "age" => 4,
-//                 "position" => "Eldest son"),
-//             array(
-//                 "name"=> "Farhana",
-//                 "birthday" => "August 14, 2021",
-//                 "age" => -1,
-//                 "position" => "Youngest Daughter"));
+// $members = array();
+$members = array(
+            array(
+                "name"=> "Ebrahim",
+                "birthday" => "July 10, 2006",
+                "age" => 18,
+                "position" => "Father"),
+            array(
+                "name"=> "Rose Marie",
+                "birthday" => "July 17, 1993",
+                "age" => 30,
+                "position" => "Mother"),
+            array(
+                "name"=> "Mohammad Rafi",
+                "birthday" => "February 27, 2020",
+                "age" => 4,
+                "position" => "Eldest son"),
+            array(
+                "name"=> "Farhana", 
+                "birthday" => "August 14, 2021",
+                "age" => 3,
+                "position" => "Youngest Daughter"));
                 
 
     $size = sizeof($members);
