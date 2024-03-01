@@ -9,6 +9,14 @@ Blogs
     <div class = "container text-center">
         <h1 class="text-primary p-5">This is the content of Blogs</h1>
         <p class="text-primary" >Talks about Laravel structures, statements and syntax.</p>
+        
+        <h2 class="text-white p-3">Problem</h1>
+        <p class="text-white"> Design program Age Group that will determine if age belongs to underage, young adult, adult, senior. </p>
+            <ul class="text-white" style="list-style: none;">
+                <li>Under age is 1-17; young adult is from 18-30;</li>
+                <li>adult is from 31-59; senior is from 60 or more.</li>
+                <li>Display “Invalid age” for negative numbers.</li>
+            </ul>
     </div>
 </div>
 
@@ -248,10 +256,6 @@ Blogs
         <h3>FOR ELSE</h3>
         <div class="row mb-3">
             <div class="col">
-                <p> Design program Age Group that will determine if age belongs to underage, young adult, adult, senior. <br>
-                    Under age is 1-17; young adult is from 18-30; <br>
-                    adult is from 31-59; senior is from 60 or more. <br>
-                    Display “Invalid age” for negative numbers.</p>
                     
                     <a type="button" title="Add New Member" class="btn btn-success">New Member</a>
             </div>
@@ -408,7 +412,7 @@ Blogs
         <div class="mt-5"></div>
         <h3>WHILE LOOP</h3>
         <div class="row">
-            <div class="col">
+            <div class="col-md">
                 <hr>
                 @php
                 $ctr = 0;
@@ -445,6 +449,50 @@ Blogs
                 <hr>
                     @endwhile
                     
+            </div>
+            <div class="col-md">
+                Code
+                <?php
+                    $text = "
+                        @php
+                        \$ctr = 0;
+                        @endphp
+
+                        @while(\$ctr <  sizeof(\$members))
+
+                        @php
+                            \$name = \$members[\$ctr][\"name\"];
+                            \$bday = \$members[\$ctr][\"birthday\"];
+                            \$age = \$members[\$ctr][\"age\"];
+                            \$position = \$members[\$ctr][\"position\"];
+                        @endphp
+
+                            Name: {{\$name}} <br> 
+                            Birthday: {{\$bday}} <br>
+                            Age: {{\$age}} <br>
+                            Group:              
+                                   @if(\$age > 1 && \$age  < 18)
+                                        Under Age
+                                    @elseif (\$age  > 17 && \$age  < 31)
+                                        Young Adult
+                                    @elseif (\$age  > 30 && \$age < 60)
+                                        Adult
+                                    @elseif (\$age  > 59)
+                                        Senior
+                                    @else
+                                        Invalid Age
+                                    @endif 
+                            <br>
+                            Position: {{\$position}}<br>
+
+                            @php \$ctr++ @endphp
+                    <hr>
+                        @endwhile
+                        "
+                ?>
+                <textarea name="" id="" rows="25" class="w-100" Disabled> {{$text}}</textarea>
+
+
             </div>
         </div>
         

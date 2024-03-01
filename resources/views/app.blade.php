@@ -117,7 +117,7 @@
                     </div>
                     <div class="col-md">
                         <h3>Quick Links</h3>
-                        <ul>
+                        <ul class="" style="list-style: none;">
                             <li><a href="/service">Services</a></li>
                             <li><a href="/aboutus">About Us</a></li>
                             <li><a href="/blogs">Blogs Us</a></li>
