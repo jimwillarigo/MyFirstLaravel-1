@@ -17,6 +17,10 @@
             border-width: 1px;
             padding: 5px;   
         }
+
+        .pl-5{
+            padding-left: 60px !important; 
+        }
     </style>
 
 
@@ -39,7 +43,7 @@
                             <a class="nav-link active" aria-current="page" href="/">Home</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="/aboutus">About SIA</a>
+                            <a class="nav-link" href="#aboutus">About SIA</a>
                             </li>
                             <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="/services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
