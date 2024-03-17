@@ -7,8 +7,11 @@ use Illuminate\Http\Request;
 class PagesController extends Controller
 {
     //
+    public function index(){
+        return view('aboutus');
+    }
     public function home(){
-        return view('home');
+        $this->index();
     }
     public function aboutus(){
         return view("aboutus");
@@ -19,4 +22,7 @@ class PagesController extends Controller
     public function contactus(){
         return view("contactus");
     }
+
+
+
 }

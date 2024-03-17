@@ -9,14 +9,6 @@ Blogs
     <div class = "container text-center">
         <h1 class="text-primary p-5">This is the content of Blogs</h1>
         <p class="text-primary" >Talks about Laravel structures, statements and syntax.</p>
-        
-        <h2 class="text-white p-3">Problem</h1>
-        <p class="text-white"> Design program Age Group that will determine if age belongs to underage, young adult, adult, senior. </p>
-            <ul class="text-white" style="list-style: none;">
-                <li>Under age is 1-17; young adult is from 18-30;</li>
-                <li>adult is from 31-59; senior is from 60 or more.</li>
-                <li>Display “Invalid age” for negative numbers.</li>
-            </ul>
     </div>
 </div>
 
@@ -24,6 +16,19 @@ Blogs
  <!-- Get value from passed Data -->
  <div class="container-fluid pt-5 pb-5">
     <div class = "container">
+        <div class="row justify-content-center">
+            <div class="col-md text-center">
+                <h2 class="text-uppercase">Problem</h1>
+                <blockquote class="blockquote">
+                <p> Design program Age Group that will determine if age belongs to underage, young adult, adult, senior. </p>
+                    <ul class="text-white" style="list-style: none;">
+                        <li>Under age is 1-17; young adult is from 18-30;</li>
+                        <li>adult is from 31-59; senior is from 60 or more.</li>
+                        <li>Display “Invalid age” for negative numbers.</li>
+                    </ul>
+                </blockquote>
+            </div>
+        </div>
         <!-- IF, ELSEIF AND ELSE -->
         <h3>IF, ELSEIF AND ELSE</h3>
         <div class="row">
@@ -66,6 +71,7 @@ Blogs
                    
             </div>
         </div>
+        <hr>
         <!-- SWITCH CASE -->
         <h3>SWITH CASE</h3>
         <div class="row">
@@ -122,6 +128,7 @@ Blogs
             </div>
         </div>
 
+        <hr>
         <!-- FOR LOOP -->
         <h3>FOR LOOP</h3>
         <div class="row">
@@ -151,6 +158,8 @@ Blogs
             </div>
 
         </div>
+
+        <hr>
         <!-- FOR LOOP -->
         <h5 class="m-3">TURNING INTO TABLE</h5>
         <div class="row">
@@ -219,6 +228,7 @@ Blogs
             </div>
         </div>
 
+        <hr>
         <!-- FOR EACH -->
         <div class="mt-5"></div>
         <h3>FOR EACH</h3>
@@ -251,6 +261,7 @@ Blogs
             </div>
         </div>
 
+        <hr>
         <!-- FOR ELSE -->
         <div class="mt-5"></div>
         <h3>FOR ELSE</h3>
@@ -260,6 +271,7 @@ Blogs
                     <a type="button" title="Add New Member" class="btn btn-success">New Member</a>
             </div>
         </div>
+        
         <!-- FOR ELSE -->
         <div class="row">
             <div class="col-md">
@@ -408,6 +420,7 @@ Blogs
             </div>
         </div>
         
+        <hr>
         <!-- WHILE LOOP -->
         <div class="mt-5"></div>
         <h3>WHILE LOOP</h3>
