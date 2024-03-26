@@ -71,55 +71,10 @@ Route::get('/post/{post_title}', function ($post_title) {
 // Route::resource('blog', 'PageController');
 // Route::resource('blogs', "BlogController");
 
-Route::get('/blogs', function(){
-    
-    $name = "Ebrahim";
-    $birthday = "July, 10, 2006";
-    $age = 18;
-    $position = "IT Instructor";
 
-// $members = [
-//     "name"=> "Mohammad Rafi",
-//     "birthday" => "February 27, 2020",
-//     "age" => 4,
-//     "position" => "Eldest"];
 
-// $members = array();
-$members = array(
-            array(
-                "name"=> "Ebrahim",
-                "birthday" => "July 10, 2006",
-                "age" => 18,
-                "position" => "Father"),
-            array(
-                "name"=> "Rose Marie",
-                "birthday" => "July 17, 1993",
-                "age" => 30,
-                "position" => "Mother"),
-            array(
-                "name"=> "Mohammad Rafi",
-                "birthday" => "February 27, 2020",
-                "age" => 4,
-                "position" => "Eldest son"),
-            array(
-                "name"=> "Farhana", 
-                "birthday" => "August 14, 2021",
-                "age" => 3,
-                "position" => "Youngest Daughter"));
-                
 
-    $size = sizeof($members);
-
-    // return view('blog', $members);
-    return view('blog')
-    ->with("n", $name)
-    ->with("b", $birthday)
-    ->with("a", $age)
-    ->with("p", $position)
-    // ->with($members);
-    ->with("members" ,$members);
-})->name("Blogs");
-    
+   
 
 Route::get('/', function () {
     return view('home');
@@ -150,8 +105,8 @@ Route::controller(LoginRegisterController::class)->group(function() {
 
 Route::controller(PagesController::class)->group(function() { 
     // Route::get('/', 'home')->name("home");
-    Route::get('aboutus', 'aboutus')->name("aboutus");
-    Route::get('service', 'services')->name("services");
+    Route::get('about', 'about')->name("about");
+    Route::get('menu', 'menu')->name("menu");
     Route::get('contactus', 'contactus')->name('contactus');
     Route::get('404', 'Exception404')->name('404');
     Route::get('500', 'Exception500')->name('500');

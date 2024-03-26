@@ -40,7 +40,7 @@
                   @for($i=0; $i<6; $i++)
                     <div class="row">
                         <div class="col-sm-3">
-                          <img src="{{asset('img/sia-logo.png')}}" class="d-block w-100" alt="...">
+                          <img src="{{asset('img/logo.jpg')}}" class="d-block w-100" alt="...">
                         </div>
                         <div class="col-sm-3">
                           <p>Title</p>

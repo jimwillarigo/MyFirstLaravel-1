@@ -8,16 +8,16 @@ class PagesController extends Controller
 {
     //
     public function index(){
-        return view('aboutus');
+        return view('about');
     }
     public function home(){
         $this->index();
     }
-    public function aboutus(){
-        return view("aboutus");
+    public function about(){
+        return view("about");
     }
-    public function services(){
-        return view("service");
+    public function menu(){
+        return view("menu");
     }
     public function contactus(){
         return view("contactus");

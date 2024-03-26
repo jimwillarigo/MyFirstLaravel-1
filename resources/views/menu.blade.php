@@ -1,11 +1,11 @@
 @extends('app')
 @section('title')
-Services
+menu
 @endsection
 
 
 @section('content')
 <div class = "container text-center">
-    <h1>This is the content of Sevices</h1>
+    <h1>This is the content of menu</h1>
 </div>
 @endsection
