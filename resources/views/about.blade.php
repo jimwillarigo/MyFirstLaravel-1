@@ -7,7 +7,7 @@ About
 @section('content')
 @parent
 <div class = "container text-center">
-    <h1>This is the About</h1>
+    <h1></h1>
     <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -77,9 +77,12 @@ html {
     display: block;
   }
 }
+.about{
+  color:antiquewhite;
+}
 </style>
 <div class="about-section">
-  <h1>About Us Page</h1>
+  <h1 class="about">About Us Page</h1>
   <p>Some text about who we are and what we do.</p>
   <p>Resize the browser window to see that this page is responsive by the way.</p>
 </div>

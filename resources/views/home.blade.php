@@ -23,36 +23,22 @@ Home
 <div class="container-fluid">
     <div id="about" class = "container pt-5 pb-5">
         <div class="row text-center">
-            <h2 class="text-uppercase">System Integration Archeticture</h2>
-            <p>The course covers fundamental concepts of system integration and system architecture. <br>
+            <h2 class="text-uppercase">Coffee Shop</h2>
+            <p>The coffee shop air swirls with aromatic dreams, little wonder it is a place we writers are drawn to. <br>
             It specifically focuses on the various management strategies of system architecture as well as their integration into the organization. </p>
-            <p style="text-align: justify;">The course is focused on concepts in enterprise architecture and application integration. 
-                It describes data, application, and technology needed to create business solutions for organizations. 
-                Principles and major frameworks in EA (Enterprise Architecture) will be introduced as well as the techniques and strategies in designing and planning and managing enterprise architecture.</p>
+            <p style="text-align: justify;">The coffee shop of white cups and black coffee, of small jugs filled with cream, has that ambience of friendly chatter. Here I can have my own seat, gain the feeling of being social, yet have the confidence that I can enjoy my own contemplations at leisure.</p>
         </div>
         <div class="row">
             <div class="col">
-                <h3> The topics include managing the : </h3>
+                <h3> Coffee is the ultimate stress reliever. </h3>
                 <ul>
-                    <li>Information systems architecture</li>
-                    <li>Ensuring a reliable</li>
-                    <li>Secure architecture </li>
-                    <li>Integration techniques.</li>
+                    <li>Life is too short for bad coffee.</li>
+                    <li>Happiness is a warm cup of coffee.</li>
+                    <li>The best coffees are the ones that taste like a conversation.</li>
+                    <li>Coffee is the universal language.</li>
                 </ul>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col">
-                <p style="text-align: justify;"><span class="fw-bold">IT integration, or systems integration</span>, is the connection of data, applications, APIs, and devices across your IT organization to be more efficient, productive, and agile. ...
-                Integration not only connects, but it also adds value through the new functionalities provided by connecting different systems' functions.</p>
-                <p>
-                <h3>System Architecture</h3>
-                <ul>
-                    <li>is the conceptual model that defines the structure, behavior, and more views of a system.</li>
-                    <li>can consist of system components and the sub-systems developed, that will work together to implement the overall system.</li>
-                </ul>
-            </div>
             
             
         </div>
@@ -68,43 +54,38 @@ Home
                 <p class="text-center">System integration is multifaceted and can be approached through different architectural models, depending on the number and nature of components that need to be connected.</p>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md mt-5">
-                <div class="card">
-                    <img src="{{asset('img/p2p.png')}}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Point-to-point model</h5>
-                        <p class="card-text"style="text-align: justify; height: 10rem;">Point-to-point integration (P2P) is the architectural pattern in which every system is directly connected to all other systems and apps it needs to work in tandem and share information with. This model can be realized via APIs, webhooks, or custom code.</p>
-                        <div class="text-center">
-                            <a href="#" class="btn btn-primary">Read More</a>
-                        </div>
-                    </div>
-                </div>
+        <div class="card-group">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="Brown sugar espresso">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
             </div>
-            <div class="col-md mt-5">
-                <div class="card">
-                    <img src="{{asset('img/hub-and-spoke.png')}}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Hub-and-spoke model</h5>
-                        <p class="card-text"style="text-align: justify; height: 10rem;">The hub-and-spoke model is a more advanced type of integration architecture that addresses the issues of point-to-point and helps to avoid the star/spaghetti mess. </p>
-                        <div class="text-center">
-                            <a href="#" class="btn btn-primary">Read More</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="Chocolate almond">Card title</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
             </div>
-            <div class="col-md mt-5">
-                <div class="card">
-                    <img src="{{asset('img/p2p.png')}}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Enterprise Service Bus (ESB) model</h5>
-                        <p class="card-text"style="text-align: justify; height: 10rem;">The ESB architecture involves the creation of a separate specialized subsystem — an enterprise service bus — that serves as a common user interface layer connecting other subsystems.</p>
-                        <div class="text-center">
-                            <a href="#" class="btn btn-primary">Read More</a>
-                        </div>
-                    </div>
-                </div>
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="Iced-Caramel-Macchiato">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">Last updated 3 mins ago</small>
+              </div>
             </div>
+          </div>
         </div>
     </div>
 </div>
