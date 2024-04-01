@@ -34,7 +34,7 @@ Login
     <div class="col-md-5">
         <div class="card m-3 text-center">
             <div class="card-header text-center">
-                <img class="img-fluid" src="{{asset('img/sia-logo.png')}}" alt="IAS " width="100" height="50"> 
+                <img class="img-fluid" src="{{asset('img/LOGO.jpg.png')}}" alt="IAS " width="100" height="50"> 
                 <h4>Sign In</h4>
             </div>
             <div class="card-body">
