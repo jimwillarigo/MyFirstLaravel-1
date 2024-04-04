@@ -10,7 +10,7 @@ Register
     <div class="col-md-5">
         <div class="card m-3 text-center">
             <div class="card-header text-center">
-                <img class="img-fluid" src="{{asset('img/LOGO.jpg.png')}}" alt="IAS " width="100" height="50"> 
+                <img class="img-fluid" src="{{asset('img/LOGO.jpg.png')}}" alt="COFFEE " width="100" height="50"> 
                 <h4>Sign Up</h4>
             </div>
             <div class="card-body">
@@ -62,8 +62,6 @@ Register
                         <input type="submit" class="col-md-3 offset-md-5 btn btn-primary" value="Register">
                     </div>
                     
-                    <a href="https://www.allphptricks.com/laravel-custom-user-registration-and-login-tutorial/" class="fw-italic">https://www.allphptricks.com/laravel-custom-user-registration-and-login-tutorial/</a>
-
                 </form>
             </div>
         </div>

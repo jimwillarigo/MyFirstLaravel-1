@@ -31,7 +31,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg bg-white">  <!-- bg-body-tertiary -->
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="{{ URL('/') }}"><img class="img-fluid" src="{{asset('img/sia-logo.png')}}" alt="IAS " width="100" height="50">
+                        <a class="navbar-brand" href="{{ URL('/') }}"><img class="img-fluid" src="{{asset('img/LOGO.jpg.png')}}" alt="COFFEE " width="100" height="50">
                         </a>
                         
                         <ul class="navbar-nav ms-auto">
@@ -73,19 +73,8 @@
                 <div class="col-4 col-sm-2 col-md-2 col-lg-3">
                 
                     <h5 class="text-capitalize">Hi! <br>{{ Auth::user()->name }},</h5>
-                    <p>Welcome to the SIA Dashboard</p>
-                    <div class="list-group">
-                            <a class="list-group-item list-group-item-action fw-bold side-nav-item" href="{{ route('dashboard') }}">
-                            <i class="bi bi-clipboard-data"></i> DASHBOARD</a>
-                            <a class="list-group-item list-group-item-action fw-bold side-nav-item" href="{{ route('dashboard_student') }}">
-                            <i class="bi bi-person-vcard"></i> STUDENT</a>
-                            <a class="list-group-item list-group-item-action fw-bold side-nav-item" href="{{ route('dashboard_post') }}">
-                            <i class="bi bi-journals"></i> POST</a>
-                            <a class="list-group-item list-group-item-action fw-bold side-nav-item" href="{{ route('dashboard_attendance') }}">
-                            <i class="bi bi-card-checklist"></i> ATTENDANCE</a>
-                            <a class="list-group-item list-group-item-action fw-bold side-nav-item" href="{{ route('dashboard_settings') }}">
-                            <i class="bi bi-gear"></i> SETTINGS</a>
-                    </div>
+                    <p>Welcome to the COFFEE Dashboard</p>
+                    
                 </div>
                 <div class="col-8 col-sm-10 col-md-10 col-lg-9">
                     <h3 class="text-center">
