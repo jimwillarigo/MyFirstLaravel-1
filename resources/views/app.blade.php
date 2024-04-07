@@ -114,13 +114,7 @@
                             <a class="nav-link active" href="{{ URL('/menu')}}">
                                 Menu
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Services 1</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Services 2</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Services 3</a></li>
-                            </ul>
+                           
                             </li>
                             <li class="nav-item">
                             <a class="nav-link active" href="/contactus">Contact Us</a>
