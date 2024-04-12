@@ -56,9 +56,9 @@ Home
         </div>
         <div class="card-group">
             <div class="card">
-              <img src="..." class="card-img-top" alt="...">
+              <img src="img/brown-sugar-espresso.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="Brown sugar espresso">Card title</h5>
+                <h5 class="Brown sugar espresso">BROWN SUGAR ESPRESSO</h5>
                 <p class="card-text">Coffee is my love language.</p>
               </div>
               <div class="card-footer">
@@ -66,9 +66,9 @@ Home
               </div>
             </div>
             <div class="card">
-              <img src="..." class="card-img-top" alt="...">
+              <img src="img/chocolate-almond.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="Chocolate almond">Card title</h5>
+                <h5 class="Chocolate almond">CHOCOLATE ALMOND</h5>
                 <p class="card-text">A good day starts with a great cup of coffee.</p>
               </div>
               <div class="card-footer">
@@ -76,9 +76,9 @@ Home
               </div>
             </div>
             <div class="card">
-              <img src="..." class="card-img-top" alt="...">
+              <img src="img/Iced-Caramel-Macchiato.webp" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="Iced-Caramel-Macchiato">Card title</h5>
+                <h5 class="Iced-Caramel-Macchiato">ICED CARAMEL MACCHIATO</h5>
                 <p class="card-text">Another day, another cup of coffee.</p>
               </div>
               <div class="card-footer">

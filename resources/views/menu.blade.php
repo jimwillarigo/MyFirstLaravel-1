@@ -5,166 +5,58 @@ menu
 
 
 @section('content')
-<div class = "container text-center">
-    <h1>This is the content of menu</h1>
-</div>
+
 <style>
-    body{
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
     
-    background-color :#E26A6A;
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
     
-}
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    
+    .menu-item {
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 20px;
+    }
+    
+    .menu-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    
+    .item-name {
+      font-size: 18px;
+      color: #333;
+    }
+    
+    .item-description {
+      color: #666;
+      margin-bottom: 5px;
+    }
+    
+    .item-price {
+      font-weight: bold;
+      color: #333;
+    }
 
-.cerceve{
-    position :relative;
-    height: 700px;
-    width: 400px;
-    border-style: none;
-    -webkit-border-radius: 7px;
-    background-color: #ECECEC;
-    margin: auto ;
     
-   
-}
-
-.cerceve p span{
-      
-    position: absolute;
-    left:40%;
-    top: 25px;
-    width:100%;
-    font-family:  'Abel', sans-serif;
-    font-size: 1.875rem;
-    font-weight: bold;        
-    color:#2574A9;
-}
-
-#kahve{
-    position: absolute;
-    left: 32%;
-    top : 15%;
-    
-}
-
-#arama{
-    position:absolute;
-    left:90%;
-    top: 25px
-}
-
-#liste{
-    position:absolute;
-    left:5%;
-    top:25px;
-}
-.menu{
-    
-    
-    height:350px;
-    width: 400px;
-    background-color: #DADFE1;
-    margin: 0 auto;
-    position: absolute;
-    bottom:0px;
-    border-style: none;
-    -webkit-border-bottom-right-radius: 7px;
-    -webkit-border-bottom-left-radius: 7px;
-    
-    
-}
-
-.menu p {
-    position: absolute;
-    left:35%;
-    top: -65px;
-    width:100%;
-    font-family:  'Abel', sans-serif;
-    font-size: 1.875rem;
-    font-weight:bold;        
-    color:#2574A9;
-    
-    
-}
-
-
-
-.menu ul {
-    
-    list-style:none;
-    position: absolute;
-    left: 5%;
-    top:30px;
-    font-family:  'Abel', sans-serif;
-    font-size: 1.075rem;
-    font-weight:bold;        
-    color:#95a5a6;
-    
-    
-    
-}
-
-.menu ul li{
-    
-    list-style:none;
-    position: relative;
-    margin-left: 10px auto;
-    top:10px;
-    font-family:  'Abel', sans-serif;
-    font-size: 1.275rem;
-    font-weight:bold;        
-    color:#2c3e50;
-    line-height: 50px;
-    
-    
-}
-
-.menu ol {
-    
-    list-style:none;
-    position: absolute;
-    right: 15%;
-    top:30px;
-    font-family:  'Abel', sans-serif;
-    font-size: 1.075rem;
-    font-weight:bold;        
-    color:#95a5a6;
-    
-    
-    
-    
-}
-
-.menu ol li{
-    
-    list-style:none;
-    position: relative;
-    margin-right: 100px auto;
-    top:10px;
-    font-family:  'Abel', sans-serif;
-    font-size: 1.275rem;
-    font-weight:bold;        
-    color:#2c3e50;
-    line-height: 50px;
-    
-    
-    
-}
-
-.fiyat{
-    
-    height:320px;
-    width: 320px;
-    background-color: #ECECEC;
-    margin-left: 10px auto;
-    position: absolute;
-    bottom:0px;
-    left:40px;
-    border-style: none;
-    -webkit-border-top-left-radius: 7px;
-    -webkit-border-top-right-radius: 7px;
-    
-}
-</style>
+  </style>
 <html>
 <head>
 	<meta http-equiv="content-type" content="text/html" />
@@ -174,55 +66,37 @@ menu
 
 
 	<title>Untitled 1</title>
-</head>
 
-<body>
+    <div class="container">
+        <h1>Coffee Menu</h1>
 
-<div class="cerceve">
-        <div id="kahve">
-            <img src="http://i.hizliresim.com/VPBLby.png"/>
-         </div>
-         
-         <div id="arama">
-            <img src="http://i.hizliresim.com/9gb50r.png"/>
-         </div>
-         
-         <div id="liste">
-            <img src="http://i.hizliresim.com/ZMnVmk.png"/>
-         </div>
-    <p><span>MENU</span></p>
-
-    
-        <div class="menu">
-            
-                <p>COFFEE</p>
-                
-        <div class="fiyat"></div>
-        <ol>SML &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LRG<br />
-                           <li>2.30&nbsp;&nbsp;&nbsp;&nbsp; 3.50</li>
-                           <li>3.10&nbsp;&nbsp;&nbsp;&nbsp; 3.50</li>
-                           <li>1.90&nbsp;&nbsp;&nbsp;&nbsp; 2.20</li>
-                           <li>2.60&nbsp;&nbsp;&nbsp;&nbsp; 3.00</li>
-                           <li>2.20&nbsp;&nbsp;&nbsp;&nbsp; 2.70</li></ol>
-                            
-        
-        
-        
-
-    <ul>SHOTS
-            <li>Expresso</li>
-            <li>Cappuccino</li>
-            <li>Americano</li>
-            <li>Cafe Latte</li>
-            <li>Macchiato</li>
-</ul>        
+        <div class="menu-item">
+          <div class="item-name">Espresso</div>
+          <div class="item-description">Strong black coffee made by forcing steam through ground coffee beans.</div>
+          <div class="item-price">$2.50</div>
         </div>
         
-</div>
+        <div class="menu-item">
+          <div class="item-name">Cappuccino</div>
+          <div class="item-description">Espresso mixed with steamed milk and topped with foamed milk.</div>
+          <div class="item-price">$3.50</div>
+        </div>
+        
+        <div class="menu-item">
+          <div class="item-name">Latte</div>
+          <div class="item-description">Espresso mixed with steamed milk.</div>
+          <div class="item-price">$4.00</div>
+        </div>
+        
+        <div class="menu-item">
+          <div class="item-name">Mocha</div>
+          <div class="item-description">Espresso mixed with chocolate syrup and steamed milk, topped with whipped cream.</div>
+          <div class="item-price">$4.50</div>
+        </div>
+        
+      </div>
 
 
 
 
-</body>
-</html>
 @endsection

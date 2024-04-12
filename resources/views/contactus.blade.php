@@ -36,9 +36,9 @@ Contact Us
 }
 
 .left-col {
-  width: 45vw;
-  height: 100%;
-  background-image: url("coffeeshop1.avif");
+  width: 50vw;
+  height: 60%;
+  background-image: url("img/coffee3.avif");
   background-size: cover;
   background-repeat: no-repeat;
 }
